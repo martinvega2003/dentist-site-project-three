@@ -2,7 +2,7 @@ import React from 'react';
 import ServiceCard from '../../components/ServiceCard';
 import { motion } from 'framer-motion';
 import { AiOutlineStar, AiOutlineHeart } from 'react-icons/ai';
-import { servicesData as services } from '../../data/servicesdata';
+import { servicesData as services } from '../../data/servicesData';
 
 const Services = () => {
   return (

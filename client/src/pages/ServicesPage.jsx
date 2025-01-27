@@ -1,6 +1,5 @@
 import React from 'react'
 import HeroSection from '../components/HeroSection'
-import ServiceCard from '../components/ServiceCard';
 import { motion } from 'framer-motion'
 import { AiOutlineStar, AiOutlineHeart } from 'react-icons/ai';
 import Button from '../components/Button';
