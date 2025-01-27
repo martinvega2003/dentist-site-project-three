@@ -2,9 +2,12 @@ import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import Button from './Button';
 import { Link } from 'react-router-dom';
+import useRedirect from './useRedirect';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const redirectTo = useRedirect()
 
   return (
     <nav className="bg-white shadow-md fixed top-0 w-full h-[70px] md:h-[100px] z-50">
@@ -36,7 +39,7 @@ const Navbar = () => {
             </li>
           </ul>
           <div className="p-4 md:p-0 flex justify-center items-center md:ml-6">
-            <Button label="Book Appointment" variant="outline" />
+            <Button label="Book Appointment" variant="outline" onClick={() => redirectTo("/booking")} />
           </div>
         </div>
       </div>

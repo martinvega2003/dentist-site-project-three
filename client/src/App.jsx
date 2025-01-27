@@ -6,6 +6,7 @@ import { servicesData } from "./data/servicesdata"
 import { ServicesPage } from "./pages/ServicesPage"
 import { ServiceFullPage } from "./pages/ServiceFullPage"
 import ScrollToTop from "./components/ScrollToTop"
+import { BookingPage } from "./pages/BookingPage"
 
 const App = () => {
 
@@ -15,6 +16,7 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<MainPage />} />
+        <Route path="/booking" element={<BookingPage />} />
         {
           servicesData.map((category, idx) => {
             return (

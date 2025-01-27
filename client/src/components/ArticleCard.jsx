@@ -21,13 +21,13 @@ const ArticleCard = ({ title, excerpt, image, isMain, date, author, comments }) 
           <p className={`text-sm mb-4 ${isMain ? "text-gray-800" : "text-gray-200"}`}>{excerpt}</p>
         </div>
         <div className={`mt-auto flex justify-between items-center text-sm ${isMain ? "text-blue-600" : "text-white"}`}>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 text-xs">
             <FaCalendarAlt /> <span>{date}</span>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 text-xs">
             <FaUser /> <span>{author}</span>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 text-xs">
             <FaRegCommentDots /> <span>{comments} comments</span>
           </div>
         </div>

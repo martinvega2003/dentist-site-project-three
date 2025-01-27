@@ -1,7 +1,10 @@
 import { motion } from 'framer-motion';
 import Button from './Button';
+import useRedirect from './useRedirect';
 
 const HeroSection = ({ heading, subheading, image }) => {
+  const redirectTo = useRedirect()
+  
   return (
     <section
       id="home"
@@ -48,7 +51,7 @@ const HeroSection = ({ heading, subheading, image }) => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 0.4 }}
           >
-            <Button label="Book Appointment" variant="primary" />
+            <Button label="Book Appointment" onClick={() => redirectTo("/booking")} variant="primary" />
           </motion.div>
           <motion.p
             className="text-blue-500 font-medium text-lg"
