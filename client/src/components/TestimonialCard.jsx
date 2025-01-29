@@ -16,12 +16,12 @@ const TestimonialCard = ({ image, name, text, rating, styleClass }) => {
       </div>
       {/* Content */}
       <div className="flex-grow pl-4">
-        <h3 className="text-4xl font-bold text-gray-800 mb-4">{name}</h3>
-        <p className="text-gray-600 text-2xl italic mb-3">"{text}"</p>
+        <h3 className="text-xl sm:text-4xl font-bold text-gray-800 sm:mb-4">{name}</h3>
+        <p className="text-gray-600 text-md sm:text-2xl italic mb-3">"{text}"</p>
         {/* Rating */}
         <div className="flex items-center gap-1">
           {[...Array(rating)].map((_, i) => (
-            <FaStar key={i} className="text-yellow-400 w-5 h-5" />
+            <FaStar key={i} className="text-yellow-400 w-3 sm:w-5 h-3 sm:h-5" />
           ))}
         </div>
       </div>

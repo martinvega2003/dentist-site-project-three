@@ -17,11 +17,11 @@ export const ServicesPage = ({category}) => {
     <section className='w-full h-fit flex flex-col justify-start items-center'>
         <HeroSection image={category.image} heading={category.heading} subheading={category.subheading} />
 
-        <div className="w-full h-fit py-20 px-16 flex flex-col md:flex-row justify-start md:justify-between items-center md:items-start bg-blue-600 text-white">
+        <div className="w-full h-fit py-20 px-4 sm:px-16 flex flex-col md:flex-row justify-start md:justify-between items-center md:items-start bg-blue-600 text-white">
             <h2 className="text-4xl w-1/2 my-4 hidden md:block">
                 A Brief Overview On {category.title}
             </h2>
-            <p className="text-xl text-gray-200 w-1/2 md:mx-4 text-justify md:text-left">
+            <p className="text-xl text-gray-200 sm:w-1/2 md:mx-4 text-justify md:text-left">
                 {category.description}
             </p>
         </div>

@@ -7,6 +7,7 @@ import { ServicesPage } from "./pages/ServicesPage"
 import { ServiceFullPage } from "./pages/ServiceFullPage"
 import ScrollToTop from "./components/ScrollToTop"
 import { BookingPage } from "./pages/BookingPage"
+import BlogPlaceholder from "./components/BlogPlaceholder"
 
 const App = () => {
 
@@ -17,6 +18,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/booking" element={<BookingPage />} />
+        <Route path="/blog-article-placeholder" element={<BlogPlaceholder />} />
         {
           servicesData.map((category, idx) => {
             return (

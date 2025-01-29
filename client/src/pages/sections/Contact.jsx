@@ -18,7 +18,7 @@ const ContactPage = () => {
         {/* Contact Section */}
         <div className="flex flex-col lg:flex-row items-start lg:items-center gap-12">
           {/* Interactive Map */}
-          <div className="w-[90%] lg:w-1/2">
+          <div className="w-full lg:w-1/2">
             <div className="relative">
               {/* Map Embed */}
               <iframe
@@ -42,7 +42,7 @@ const ContactPage = () => {
           </div>
 
           {/* Contact Information */}
-          <div className="bg-white rounded-lg shadow-lg p-8 w-[90%] lg:w-1/2">
+          <div className="bg-white rounded-lg shadow-lg p-8 w-full lg:w-1/2">
             {/* Address */}
             <div className="mb-6">
               <h3 className="text-xl font-bold text-gray-800 mb-2 flex items-center gap-2">

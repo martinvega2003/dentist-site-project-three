@@ -20,14 +20,14 @@ export const ServiceFullPage = ({service}) => {
     <section className='w-full h-fit flex flex-col justify-start items-center'>
         <HeroSection image={service.image} heading={service.heading} subheading={service.subheading} />
 
-        <div className="w-full h-fit py-20 px-16 flex justify-center items-center bg-gray-100 text-gray-800">
-            <p className="text-xl text-center">
+        <div className="w-full h-fit py-20 px-4 sm:px-16 flex justify-center items-center bg-gray-100 text-gray-800">
+            <p className="text-xl text-justify md:text-center">
                 {service.description}
             </p>
         </div>
 
         {/* Dentists Section */}
-        <div className='py-12 px-8 pl-20'>
+        <div className='py-12 px-4 sm:px-16'>
             <h3 className="text-left text-2xl lg:text-4xl font-bold text-blue-600 mb-8">
                 Meet Our {service.name} Professionals
             </h3>
