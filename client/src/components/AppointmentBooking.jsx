@@ -12,6 +12,7 @@ import {
   isSameDay,
 } from "date-fns";
 import Button from "./Button";
+import { servicesData } from "../data/servicesData";
 
 const AppointmentBooking = () => {
   const [selectedDate, setSelectedDate] = useState(new Date());
@@ -121,7 +122,7 @@ const AppointmentBooking = () => {
       </div>
 
       {/* Booking Card */}
-      <div className="w-full max-w-6xl bg-white border border-gray-300 flex flex-col lg:flex-row shadow-2xl rounded-3xl overflow-hidden">
+      <div className="w-full max-w-6xl bg-white border border-gray-300 flex flex-col-reverse lg:flex-row shadow-2xl rounded-3xl overflow-hidden">
         {/* Client Info Section */}
         <div className="flex flex-col flex-1 p-6 border-b lg:border-b-0 lg:border-r border-gray-300">
           <h2 className="text-lg font-semibold mb-4">Client Information</h2>
@@ -156,11 +157,16 @@ const AppointmentBooking = () => {
             className="p-2 border border-gray-300 rounded"
           >
             <option value="">Select Service</option>
-            <option value="consultation">Consultation</option>
-            <option value="therapy">Therapy</option>
+            {
+              servicesData.map(category => {
+                return category.services.map(service => {
+                  return <option value={service.name}>{service.name}</option>
+                })
+              })
+            }
           </select>
 
-          <Button variant="primary" label="Book A Call" onClick={handleBooking} />
+          <Button className="mt-4" variant="primary" label="Book A Call" onClick={handleBooking} />
         </div>
 
         {/* Calendar Section */}

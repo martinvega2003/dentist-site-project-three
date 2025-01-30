@@ -26,24 +26,6 @@ export const ServiceFullPage = ({service}) => {
             </p>
         </div>
 
-        {/* Dentists Section */}
-        <div className='py-12 px-4 sm:px-16'>
-            <h3 className="text-left text-2xl lg:text-4xl font-bold text-blue-600 mb-8">
-                Meet Our {service.name} Professionals
-            </h3>
-            <div className="flex flex-col justify-start items-start gap-8">
-                {dentists.map((member, index) => (
-                    <ProfessionalCard
-                        key={index}
-                        name={member.name}
-                        image={member.image}
-                        role={member.role}
-                        bio={member.bio}
-                    />
-                ))}
-            </div>
-        </div>
-
         {/* FAQs Section */}
         <div className="w-full bg-blue-700 text-white py-16 px-8">
             <div className="w-full flex flex-col lg:flex-row justify-between items-center lg:items-start">
