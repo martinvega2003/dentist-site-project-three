@@ -20,7 +20,7 @@ export const ServiceFullPage = ({service}) => {
     <section className='w-full h-fit flex flex-col justify-start items-center'>
         <HeroSection image={service.image} heading={service.heading} subheading={service.subheading} />
 
-        <div className="w-full h-fit py-20 px-4 sm:px-16 flex justify-center items-center bg-gray-100 text-gray-800">
+        <div id='about' className="w-full h-fit py-20 px-4 sm:px-16 flex justify-center items-center bg-gray-100 text-gray-800">
             <p className="text-xl text-justify md:text-center">
                 {service.description}
             </p>

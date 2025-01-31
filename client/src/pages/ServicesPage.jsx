@@ -17,7 +17,7 @@ export const ServicesPage = ({category}) => {
     <section className='w-full h-fit flex flex-col justify-start items-center'>
         <HeroSection image={category.image} heading={category.heading} subheading={category.subheading} />
 
-        <div className="w-full h-fit py-20 px-4 sm:px-16 flex flex-col md:flex-row justify-start md:justify-between items-center md:items-start bg-blue-600 text-white">
+        <div id='about' className="w-full h-fit py-20 px-4 sm:px-16 flex flex-col md:flex-row justify-start md:justify-between items-center md:items-start bg-blue-600 text-white">
             <h2 className="text-4xl w-1/2 my-4 hidden md:block">
                 A Brief Overview On {category.title}
             </h2>
@@ -26,7 +26,7 @@ export const ServicesPage = ({category}) => {
             </p>
         </div>
 
-        <div className="relative bg-gray-50 py-16 w-full">
+        <div id='services' className="relative bg-gray-50 py-16 w-full">
             {/* Decorative Icons */}
             <div className="absolute top-10 left-10 text-blue-100 text-6xl">
                 <AiOutlineStar />

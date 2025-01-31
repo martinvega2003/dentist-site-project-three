@@ -7,7 +7,7 @@ const About = () => {
   
 
   return (
-    <section className="bg-gray-50 py-16">
+    <section id='about' className="bg-gray-50 py-16">
       <div className="container mx-auto px-6">
         {/* Heading */}
         <div className="text-center mb-12">

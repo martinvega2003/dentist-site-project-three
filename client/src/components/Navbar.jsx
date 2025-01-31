@@ -26,7 +26,7 @@ const Navbar = () => {
         <div className={`absolute top-16 left-0 w-full bg-white shadow-lg md:shadow-none md:static md:flex md:items-center md:w-auto ${isMenuOpen ? 'block' : 'hidden'}`}>
           <ul className="flex flex-col items-center md:flex-row md:items-center md:gap-1 lg:gap-6">
             <li className="text-gray-700 hover:text-blue-600 text-lg py-2 px-4 md:py-0">
-              <a href="#home">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li className="text-gray-700 hover:text-blue-600 text-lg py-2 px-4 md:py-0">
               <a href="#about">About</a>
