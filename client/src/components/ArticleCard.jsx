@@ -8,14 +8,14 @@ const ArticleCard = ({ title, excerpt, image, isMain, date, author, comments }) 
   return (
     <div
       className={`flex flex-col ${
-        isMain ? "lg:flex-row lg:gap-8 bg-transparent pb-4 sm:pb-0 sm:p-12 transition duration-300 shadow-lg rounded-[50px]" : "bg-blue-400 rounded-lg"
+        isMain ? "lg:flex-row lg:gap-8 bg-transparent pb-4 sm:pb-0 transition duration-300 shadow-lg rounded-[50px]" : "bg-blue-400 rounded-lg"
       } overflow-hidden cursor-pointer`}
       onClick={() => redirectTo("/blog-article-placeholder")}
     >
       <img
         src={image}
         alt={title}
-        className={`${isMain ? "lg:w-2/5" : "w-full"} object-cover`}
+        className={`${isMain ? "lg:w-2/5 min-h-full" : "w-full"} object-cover`}
       />
       <div className="p-6 flex flex-col justify-between items-start">
         <div>
